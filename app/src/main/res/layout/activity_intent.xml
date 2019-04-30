@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IntentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bundle"/>
+
+        <EditText
+            android:id="@+id/e1"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/b1" />
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="71dp"
+            android:text="轉換"
+            android:onClick="btn1Click"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bundle_ForResult"/>
+
+        <EditText
+            android:id="@+id/e2"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/b2" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="71dp"
+            android:text="轉換"
+            android:onClick="btn2Click"/>
+
+        <TextView
+            android:id="@+id/out1"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/e2"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Implicit_Intent"/>
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/b4"
+            android:layout_toEndOf="@+id/b5"
+            android:onClick="btn3Click"
+            android:text="啟動地圖" />
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/b5"
+            android:layout_toStartOf="@+id/b5"
+            android:onClick="btn3Click"
+            android:text="打電話" />
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:onClick="btn3Click"
+            android:text="寄送電子郵件" />
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/b4"
+            android:layout_below="@+id/b3"
+            android:onClick="btn3Click"
+            android:text="WebSearch" />
+
+        <EditText
+            android:id="@+id/e3"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/b3"
+            android:layout_below="@+id/b3" />
+
+        <Button
+            android:id="@+id/b7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/b4"
+            android:layout_below="@+id/b6"
+            android:onClick="btn3Click"
+            android:text="AddressSearch" />
+
+        <EditText
+            android:id="@+id/e4"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/b7"
+            android:layout_toEndOf="@+id/b7" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Implicit_Intent_ForResult"/>
+
+        <Button
+            android:id="@+id/b8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:onClick="btn4Click"
+            android:text="選取聯絡人" />
+    </RelativeLayout>
+</LinearLayout>
